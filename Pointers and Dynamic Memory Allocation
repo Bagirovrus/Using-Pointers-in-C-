@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int* ptr;
+    ptr = new int; // Allocate memory
+
+    *ptr = 10; // Store value at allocated address
+
+    std::cout << "Value at ptr: " << *ptr << std::endl;
+
+    delete ptr; // Deallocate memory
+
+    return 0;
+}
